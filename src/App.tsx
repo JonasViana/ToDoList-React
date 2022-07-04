@@ -8,7 +8,6 @@ const App = () => {
   const [list, setList] = useState<Item[]>([
     
   ])
-
   const handleAddTask = (taskName:string) => {
     let newList = [...list]
     newList.push({
@@ -29,16 +28,22 @@ const App = () => {
     setList(newList);
   }
 
+  const onDelete = (id:number) => {
+    
+  const newList = list.filter((item) => item.id !== id)
+
+  setList(newList)
+  }
+
   return(
     <C.Container>
       <C.Area>
         <C.Header>To Do List</C.Header>
 
       <AddArea onEnter={handleAddTask} />
-       
-
+      
       {list.map((item ,index ) => (
-        <ListItem key={index} item={item} onChange = { handleTaskChange } />
+        <ListItem key={index} item={item} onChange = { handleTaskChange } onClick={ onDelete } />
       ))}
 
       </C.Area>

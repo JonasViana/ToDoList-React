@@ -12,7 +12,18 @@ export const Container = styled.div(( { done }: ContainerProps) => (
     border-radius: 10px;
     margin-bottom: 10px;
     align-itens: center;
+    justify-content: space-between;
 
+    button{
+        background-color:#20212C;
+        border: none;
+        border-radius: 5px;
+    }
+
+    button:hover{
+        background-color:#17181F;
+
+    }
 
     input{
         width: 25px;
@@ -24,6 +35,8 @@ export const Container = styled.div(( { done }: ContainerProps) => (
     label{
         color:#CCC;
         text-decoration: ${done ? 'line-through' : 'initial'};
+        display: flex;
+        align-itens: center;
     }
 `
 ))

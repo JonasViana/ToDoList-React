@@ -4,13 +4,14 @@ import { Item } from '../../types/Item'
 type Props = {
     item: Item,
     onChange: (id: number, done: boolean) => void
+    onClick: (id:number) => void
 }
 
-export const ListItem = ({ item, onChange }: Props) => {
+export const ListItem = ({ item, onChange, onClick}: Props) => {
 
     return(
         <C.Container done={item.done}>
-            <input 
+            <input
                  type='checkbox' 
                  checked={item.done}
                  onChange ={e => onChange(item.id, e.target.checked)}
@@ -18,6 +19,9 @@ export const ListItem = ({ item, onChange }: Props) => {
             <label> 
                 {item.name}
             </label>
+            <button onClick={ () => onClick(item.id)} >
+                ❌
+            </button>
         </C.Container>
     )
 }
