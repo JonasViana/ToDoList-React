@@ -22,7 +22,7 @@ Abra http://localhost:3000 para visualizá-lo no navegador.
 
 ## Utilizando a aplicação
 
-Basta digitar a tarefa desejada no input e pressionar enter, logo em seguida a tarefa digitada ira para a lista de tarefas, onde voce pode marcar se ela ja foi concluida ou não e excluir caso seja necessario. 
+Basta digitar a tarefa desejada no input e pressionar enter, logo em seguida o valor digitado ira para a lista de tarefas, onde você pode marcar se ela já foi concluída e excluir caso seja necessário.
 
 ## Interface esperada
 
