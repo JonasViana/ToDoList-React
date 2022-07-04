@@ -16,6 +16,7 @@ npm start
 Executa o aplicativo no modo de desenvolvimento.
 Abra http://localhost:3000 para visualizá-lo no navegador.
 
+<<<<<<< HEAD
 ## Interface do projeto
 
 ![alt text](/public/images/tela-esperada.png)
@@ -27,3 +28,9 @@ Basta digitar a tarefa desejada no input e pressionar enter, logo em seguida a t
 ## Interface esperada
 
 ![alt text](/public/images/tela-esperada-preenchida.png)
+=======
+
+## Utilizando a aplicação
+
+Basta digitar a tarefa desejada no input e pressionar enter, logo em seguida a tarefa digitada ira para a lista de tarefas, onde voce pode marcar se ela ja foi concluida ou não.
+>>>>>>> dbd0c4c9f964d0fa4750d997fc768376a54452a2
